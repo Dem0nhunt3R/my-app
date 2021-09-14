@@ -1,0 +1,27 @@
+Index: components/User.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\r\nimport {StyleSheet} from 'react-native';\r\nimport {View,Text,Button,TouchableOpacity} from 'react-native';\r\n\r\nconst User = ({item}) => {\r\n    return <View style={styles.userBox}>\r\n        <Text>{item.name}</Text>\r\n    </View>;\r\n};\r\nexport default User;\r\n\r\nconst styles = StyleSheet.create({\r\n    userBox:{\r\n        backgroundColor:'yellow',\r\n        marginBottom:5\r\n\r\n    }\r\n});\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/components/User.js b/components/User.js
+--- a/components/User.js	(revision f4bc139aab1cc269d122c0ba157650cc947fdda7)
++++ b/components/User.js	(date 1631560591016)
+@@ -1,6 +1,6 @@
+ import React from 'react';
+ import {StyleSheet} from 'react-native';
+-import {View,Text,Button,TouchableOpacity} from 'react-native';
++import {View,Text} from 'react-native';
+ 
+ const User = ({item}) => {
+     return <View style={styles.userBox}>
+@@ -12,7 +12,6 @@
+ const styles = StyleSheet.create({
+     userBox:{
+         backgroundColor:'yellow',
+-        marginBottom:5
+-
++        marginBottom:50
+     }
+ });
